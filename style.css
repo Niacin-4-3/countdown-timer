@@ -58,3 +58,29 @@ h1 {
 .hidden {
     display: none;
 }
+
+/* 响应式适配移动端 */
+@media (max-width: 600px) {
+    .countdown-container {
+        padding: 20px 10px;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(255, 127, 0, 0.3);
+    }
+
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .countdown {
+        gap: 12px;
+    }
+
+    .time-element span {
+        font-size: 2em;
+    }
+
+    .message {
+        font-size: 1.7em;
+    }
+}
