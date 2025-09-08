@@ -73,8 +73,14 @@ function showSetupView() {
     setupContainer.classList.remove('hidden');
     clearInterval(timerInterval); // 停止计时器
     localStorage.removeItem('countdownData'); // 清除数据
-    eventTitleInput.value = '';
-    eventDateInput.value = '';
+
+    // =======================================================
+    // === 改动在这里：设置默认的标题和时间 ===
+    // HTML 的 datetime-local 输入框需要 'YYYY-MM-DDTHH:MM' 格式
+    // "2025年12月21日上午9点" 对应的格式是 "2025-12-21T09:00"
+    eventTitleInput.value = '目标日';
+    eventDateInput.value = '2025-12-21T09:00';
+    // =======================================================
 }
 
 // "开始倒计时"按钮的点击事件
@@ -122,7 +128,7 @@ window.addEventListener('load', () => {
         updateCountdown();
         timerInterval = setInterval(updateCountdown, 1000);
     } else {
-        // 否则显示设置界面
+        // 否则显示设置界面 (此时会自动填充默认值)
         showSetupView();
     }
 });
