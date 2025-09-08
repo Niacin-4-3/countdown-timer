@@ -13,7 +13,7 @@ body {
 }
 
 .countdown-container {
-    background: rgba(0, 0, 0, 0.6); /* 爱马仕橙的透明背景 */
+    background: rgba(0, 0, 0, 0.1); /* 爱马仕橙的透明背景 */
     padding: 40px 60px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* 爱马仕橙阴影 */
