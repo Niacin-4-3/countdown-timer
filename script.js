@@ -51,9 +51,9 @@ function updateCountdown() {
     minutesEl.innerText = formatTime(minutes);
     secondsEl.innerText = formatTime(seconds);
 
-    // 更新进度条
-    const elapsedTime = now - startDate;
-    const progressPercentage = Math.min((elapsedTime / totalTime) * 100, 100);
+    // === 修改：进度条显示今天已过的时间 ===
+    const secondsPassedToday = now.getHours() * 3600 + now.getMinutes() * 60 + now.getSeconds();
+    const progressPercentage = (secondsPassedToday / 86400) * 100;
     progressBar.style.width = `${progressPercentage}%`;
 }
 
