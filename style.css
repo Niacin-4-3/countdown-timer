@@ -13,10 +13,10 @@ body {
 }
 
 .countdown-container {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(215, 95, 40, 0.2);
     padding: 40px 60px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(215, 95, 40, 0.3);
 }
 
 h1 {
