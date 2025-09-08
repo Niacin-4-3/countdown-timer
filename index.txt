@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>倒计时</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="countdown-container">
+        <h1>距离目标时间还有</h1>
+        <div id="countdown" class="countdown">
+            <div class="time-element">
+                <span id="days">0</span>
+                <p>天</p>
+            </div>
+            <div class="time-element">
+                <span id="hours">0</span>
+                <p>时</p>
+            </div>
+            <div class="time-element">
+                <span id="minutes">0</span>
+                <p>分</p>
+            </div>
+            <div class="time-element">
+                <span id="seconds">0</span>
+                <p>秒</p>
+            </div>
+        </div>
+        <div id="message" class="message hidden">
+            🎉 时间到！
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
