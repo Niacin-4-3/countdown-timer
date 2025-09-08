@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
 
 body {
-    background: linear-gradient(45deg, #2c3e50, #3498db);
+    background: linear-gradient(45deg, #FF7F00, #E05206); /* 爱马仕橙渐变 */
     color: #ffffff;
     font-family: 'Noto Sans SC', sans-serif;
     display: flex;
@@ -13,10 +13,10 @@ body {
 }
 
 .countdown-container {
-    background: rgba(215, 95, 40, 0.2);
+    background: rgba(255, 127, 0, 0.12); /* 爱马仕橙的透明背景 */
     padding: 40px 60px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(215, 95, 40, 0.3);
+    box-shadow: 0 10px 25px rgba(255, 127, 0, 0.18); /* 爱马仕橙阴影 */
 }
 
 h1 {
