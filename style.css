@@ -21,38 +21,101 @@ body {
 
 h1 {
     font-weight: 400;
-    font-size: 2.5em;
+    font-size: 2.2em;
     margin-bottom: 30px;
 }
 
+/* --- 设置界面样式 --- */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    box-sizing: border-box; /* 确保 padding 不会撑大宽度 */
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.error {
+    color: #e74c3c;
+    margin-top: 15px;
+    height: 20px;
+}
+
+/* --- 倒计时界面样式 --- */
 .countdown {
     display: flex;
     justify-content: center;
     gap: 20px;
-}
-
-.time-element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
 }
 
 .time-element span {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 700;
-    line-height: 1;
 }
 
 .time-element p {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-top: 5px;
-    text-transform: uppercase;
-    opacity: 0.8;
+}
+
+/* --- 进度条 --- */
+.progress-bar-container {
+    width: 100%;
+    height: 15px;
+    background-color: #2c3e50;
+    border-radius: 10px;
+    margin: 30px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #2ecc71;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
 }
 
 .message {
     font-size: 3em;
     font-weight: 700;
+}
+
+#reset-btn {
+    background-color: #95a5a6;
+}
+#reset-btn:hover {
+    background-color: #7f8c8d;
 }
 
 .hidden {
